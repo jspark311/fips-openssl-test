@@ -1,0 +1,9 @@
+#  CAVS 14.2
+#  "SHA-224 Monte" 
+#  SHA-224 tests are configured for BYTE oriented implementations
+#  Generated on Tue Jan 22 12:19:46 2013
+
+[L = 28]
+
+Seed = 65997375ed79ae7712cbb79d17940fba95de2abecab967db348046e6
+

@@ -1,0 +1,19 @@
+# CAVS 14.2
+# AESVS MCT test data for OFB
+# State : Encrypt and Decrypt
+# Key Length : 128
+# Generated on Fri Mar 15 13:16:15 2013
+
+[ENCRYPT]
+
+COUNT = 0
+KEY = 91a2825a59f9ad85135a268ceb492b43
+IV = b5ea31d9d5b689dfdd8f69372bebc321
+PLAINTEXT = d65301f7c43e62af4cda2bb745f701f4
+
+[DECRYPT]
+
+COUNT = 0
+KEY = d508bb70d63fa350ad935c42c2da38e1
+IV = 24fbcbcd24fb0f78010357bd194e044e
+CIPHERTEXT = 299306499a8c71433e2c316105ae65db

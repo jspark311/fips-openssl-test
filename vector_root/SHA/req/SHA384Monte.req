@@ -1,0 +1,9 @@
+#  CAVS 14.2
+#  "SHA-384 Monte" 
+#  SHA-384 tests are configured for BYTE oriented implementations
+#  Generated on Tue Jan 22 12:19:48 2013
+
+[L = 48]
+
+Seed = 34fe0f7e81f7c5bdd9e748781c00950752fb13833e5ac82936f1cd0332a4ffc52272f8f585b33e4e379db9678a0d6b90
+

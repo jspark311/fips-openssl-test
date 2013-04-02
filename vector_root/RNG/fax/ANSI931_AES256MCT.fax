@@ -1,0 +1,12 @@
+#  CAVS 14.2
+#  "ANSI X9.31"
+#  Generated on Fri Mar 15 13:13:52 2013
+
+[X9.31]
+[AES 256-Key]
+
+COUNT = 0
+Key = 67101dcc6cf0e866ead1756b16e2ca1941faebb6b0244e2ea85b8efdc892634f
+DT = a47fb81e6afe0aff82c8b51f00f194bc
+V = 601499999c7b5ab668efb0dcbddc6974
+R = dbe06ba37bfc51af1cf6a7113bb40bf8

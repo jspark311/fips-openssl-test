@@ -1,0 +1,19 @@
+# CAVS 14.2
+# AESVS MCT test data for CFB128
+# State : Encrypt and Decrypt
+# Key Length : 128
+# Generated on Fri Mar 15 13:16:10 2013
+
+[ENCRYPT]
+
+COUNT = 0
+KEY = 7b282bb25bd5742362eee3e724c15fda
+IV = 72396d633b35b617b15fd330629c67ca
+PLAINTEXT = ad886cd60df9b181d57fc3a1b460df4a
+
+[DECRYPT]
+
+COUNT = 0
+KEY = 5b645ceeb9058c648654bbc3e7f4d0e2
+IV = f7af50035780471963b7d51d91c03e8e
+CIPHERTEXT = b84b8182469118bdd569484432b57ab1

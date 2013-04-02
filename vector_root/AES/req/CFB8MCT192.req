@@ -1,0 +1,19 @@
+# CAVS 14.2
+# AESVS MCT test data for CFB8
+# State : Encrypt and Decrypt
+# Key Length : 192
+# Generated on Fri Mar 15 13:16:07 2013
+
+[ENCRYPT]
+
+COUNT = 0
+KEY = 86d2f856f94b5238c9b6bb394aec3c97d0b7001d0cdb4d47
+IV = 01b2291393cab5303b1932bcd0ea4ff6
+PLAINTEXT = 90
+
+[DECRYPT]
+
+COUNT = 0
+KEY = 323c1f9f1580cb706299ba359b9610949f67482770941ed0
+IV = d4d2c9bd4a9b2f8a24844ce635262a45
+CIPHERTEXT = 7f

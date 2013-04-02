@@ -1,0 +1,647 @@
+#  CAVS 14.2
+#  "ANSI X9.31"
+#  Generated on Fri Mar 15 13:13:52 2013
+
+[X9.31]
+[AES 192-Key]
+
+COUNT = 0
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa38
+V = 80000000000000000000000000000000
+
+COUNT = 1
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa39
+V = c0000000000000000000000000000000
+
+COUNT = 2
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa3a
+V = e0000000000000000000000000000000
+
+COUNT = 3
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa3b
+V = f0000000000000000000000000000000
+
+COUNT = 4
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa3c
+V = f8000000000000000000000000000000
+
+COUNT = 5
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa3d
+V = fc000000000000000000000000000000
+
+COUNT = 6
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa3e
+V = fe000000000000000000000000000000
+
+COUNT = 7
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa3f
+V = ff000000000000000000000000000000
+
+COUNT = 8
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa40
+V = ff800000000000000000000000000000
+
+COUNT = 9
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa41
+V = ffc00000000000000000000000000000
+
+COUNT = 10
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa42
+V = ffe00000000000000000000000000000
+
+COUNT = 11
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa43
+V = fff00000000000000000000000000000
+
+COUNT = 12
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa44
+V = fff80000000000000000000000000000
+
+COUNT = 13
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa45
+V = fffc0000000000000000000000000000
+
+COUNT = 14
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa46
+V = fffe0000000000000000000000000000
+
+COUNT = 15
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa47
+V = ffff0000000000000000000000000000
+
+COUNT = 16
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa48
+V = ffff8000000000000000000000000000
+
+COUNT = 17
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa49
+V = ffffc000000000000000000000000000
+
+COUNT = 18
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa4a
+V = ffffe000000000000000000000000000
+
+COUNT = 19
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa4b
+V = fffff000000000000000000000000000
+
+COUNT = 20
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa4c
+V = fffff800000000000000000000000000
+
+COUNT = 21
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa4d
+V = fffffc00000000000000000000000000
+
+COUNT = 22
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa4e
+V = fffffe00000000000000000000000000
+
+COUNT = 23
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa4f
+V = ffffff00000000000000000000000000
+
+COUNT = 24
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa50
+V = ffffff80000000000000000000000000
+
+COUNT = 25
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa51
+V = ffffffc0000000000000000000000000
+
+COUNT = 26
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa52
+V = ffffffe0000000000000000000000000
+
+COUNT = 27
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa53
+V = fffffff0000000000000000000000000
+
+COUNT = 28
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa54
+V = fffffff8000000000000000000000000
+
+COUNT = 29
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa55
+V = fffffffc000000000000000000000000
+
+COUNT = 30
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa56
+V = fffffffe000000000000000000000000
+
+COUNT = 31
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa57
+V = ffffffff000000000000000000000000
+
+COUNT = 32
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa58
+V = ffffffff800000000000000000000000
+
+COUNT = 33
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa59
+V = ffffffffc00000000000000000000000
+
+COUNT = 34
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa5a
+V = ffffffffe00000000000000000000000
+
+COUNT = 35
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa5b
+V = fffffffff00000000000000000000000
+
+COUNT = 36
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa5c
+V = fffffffff80000000000000000000000
+
+COUNT = 37
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa5d
+V = fffffffffc0000000000000000000000
+
+COUNT = 38
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa5e
+V = fffffffffe0000000000000000000000
+
+COUNT = 39
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa5f
+V = ffffffffff0000000000000000000000
+
+COUNT = 40
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa60
+V = ffffffffff8000000000000000000000
+
+COUNT = 41
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa61
+V = ffffffffffc000000000000000000000
+
+COUNT = 42
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa62
+V = ffffffffffe000000000000000000000
+
+COUNT = 43
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa63
+V = fffffffffff000000000000000000000
+
+COUNT = 44
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa64
+V = fffffffffff800000000000000000000
+
+COUNT = 45
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa65
+V = fffffffffffc00000000000000000000
+
+COUNT = 46
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa66
+V = fffffffffffe00000000000000000000
+
+COUNT = 47
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa67
+V = ffffffffffff00000000000000000000
+
+COUNT = 48
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa68
+V = ffffffffffff80000000000000000000
+
+COUNT = 49
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa69
+V = ffffffffffffc0000000000000000000
+
+COUNT = 50
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa6a
+V = ffffffffffffe0000000000000000000
+
+COUNT = 51
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa6b
+V = fffffffffffff0000000000000000000
+
+COUNT = 52
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa6c
+V = fffffffffffff8000000000000000000
+
+COUNT = 53
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa6d
+V = fffffffffffffc000000000000000000
+
+COUNT = 54
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa6e
+V = fffffffffffffe000000000000000000
+
+COUNT = 55
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa6f
+V = ffffffffffffff000000000000000000
+
+COUNT = 56
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa70
+V = ffffffffffffff800000000000000000
+
+COUNT = 57
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa71
+V = ffffffffffffffc00000000000000000
+
+COUNT = 58
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa72
+V = ffffffffffffffe00000000000000000
+
+COUNT = 59
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa73
+V = fffffffffffffff00000000000000000
+
+COUNT = 60
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa74
+V = fffffffffffffff80000000000000000
+
+COUNT = 61
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa75
+V = fffffffffffffffc0000000000000000
+
+COUNT = 62
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa76
+V = fffffffffffffffe0000000000000000
+
+COUNT = 63
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa77
+V = ffffffffffffffff0000000000000000
+
+COUNT = 64
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa78
+V = ffffffffffffffff8000000000000000
+
+COUNT = 65
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa79
+V = ffffffffffffffffc000000000000000
+
+COUNT = 66
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa7a
+V = ffffffffffffffffe000000000000000
+
+COUNT = 67
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa7b
+V = fffffffffffffffff000000000000000
+
+COUNT = 68
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa7c
+V = fffffffffffffffff800000000000000
+
+COUNT = 69
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa7d
+V = fffffffffffffffffc00000000000000
+
+COUNT = 70
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa7e
+V = fffffffffffffffffe00000000000000
+
+COUNT = 71
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa7f
+V = ffffffffffffffffff00000000000000
+
+COUNT = 72
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa80
+V = ffffffffffffffffff80000000000000
+
+COUNT = 73
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa81
+V = ffffffffffffffffffc0000000000000
+
+COUNT = 74
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa82
+V = ffffffffffffffffffe0000000000000
+
+COUNT = 75
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa83
+V = fffffffffffffffffff0000000000000
+
+COUNT = 76
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa84
+V = fffffffffffffffffff8000000000000
+
+COUNT = 77
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa85
+V = fffffffffffffffffffc000000000000
+
+COUNT = 78
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa86
+V = fffffffffffffffffffe000000000000
+
+COUNT = 79
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa87
+V = ffffffffffffffffffff000000000000
+
+COUNT = 80
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa88
+V = ffffffffffffffffffff800000000000
+
+COUNT = 81
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa89
+V = ffffffffffffffffffffc00000000000
+
+COUNT = 82
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa8a
+V = ffffffffffffffffffffe00000000000
+
+COUNT = 83
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa8b
+V = fffffffffffffffffffff00000000000
+
+COUNT = 84
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa8c
+V = fffffffffffffffffffff80000000000
+
+COUNT = 85
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa8d
+V = fffffffffffffffffffffc0000000000
+
+COUNT = 86
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa8e
+V = fffffffffffffffffffffe0000000000
+
+COUNT = 87
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa8f
+V = ffffffffffffffffffffff0000000000
+
+COUNT = 88
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa90
+V = ffffffffffffffffffffff8000000000
+
+COUNT = 89
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa91
+V = ffffffffffffffffffffffc000000000
+
+COUNT = 90
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa92
+V = ffffffffffffffffffffffe000000000
+
+COUNT = 91
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa93
+V = fffffffffffffffffffffff000000000
+
+COUNT = 92
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa94
+V = fffffffffffffffffffffff800000000
+
+COUNT = 93
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa95
+V = fffffffffffffffffffffffc00000000
+
+COUNT = 94
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa96
+V = fffffffffffffffffffffffe00000000
+
+COUNT = 95
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa97
+V = ffffffffffffffffffffffff00000000
+
+COUNT = 96
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa98
+V = ffffffffffffffffffffffff80000000
+
+COUNT = 97
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa99
+V = ffffffffffffffffffffffffc0000000
+
+COUNT = 98
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa9a
+V = ffffffffffffffffffffffffe0000000
+
+COUNT = 99
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa9b
+V = fffffffffffffffffffffffff0000000
+
+COUNT = 100
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa9c
+V = fffffffffffffffffffffffff8000000
+
+COUNT = 101
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa9d
+V = fffffffffffffffffffffffffc000000
+
+COUNT = 102
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa9e
+V = fffffffffffffffffffffffffe000000
+
+COUNT = 103
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faa9f
+V = ffffffffffffffffffffffffff000000
+
+COUNT = 104
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa0
+V = ffffffffffffffffffffffffff800000
+
+COUNT = 105
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa1
+V = ffffffffffffffffffffffffffc00000
+
+COUNT = 106
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa2
+V = ffffffffffffffffffffffffffe00000
+
+COUNT = 107
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa3
+V = fffffffffffffffffffffffffff00000
+
+COUNT = 108
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa4
+V = fffffffffffffffffffffffffff80000
+
+COUNT = 109
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa5
+V = fffffffffffffffffffffffffffc0000
+
+COUNT = 110
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa6
+V = fffffffffffffffffffffffffffe0000
+
+COUNT = 111
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa7
+V = ffffffffffffffffffffffffffff0000
+
+COUNT = 112
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa8
+V = ffffffffffffffffffffffffffff8000
+
+COUNT = 113
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaa9
+V = ffffffffffffffffffffffffffffc000
+
+COUNT = 114
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaaa
+V = ffffffffffffffffffffffffffffe000
+
+COUNT = 115
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaab
+V = fffffffffffffffffffffffffffff000
+
+COUNT = 116
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaac
+V = fffffffffffffffffffffffffffff800
+
+COUNT = 117
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaad
+V = fffffffffffffffffffffffffffffc00
+
+COUNT = 118
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaae
+V = fffffffffffffffffffffffffffffe00
+
+COUNT = 119
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faaaf
+V = ffffffffffffffffffffffffffffff00
+
+COUNT = 120
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab0
+V = ffffffffffffffffffffffffffffff80
+
+COUNT = 121
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab1
+V = ffffffffffffffffffffffffffffffc0
+
+COUNT = 122
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab2
+V = ffffffffffffffffffffffffffffffe0
+
+COUNT = 123
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab3
+V = fffffffffffffffffffffffffffffff0
+
+COUNT = 124
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab4
+V = fffffffffffffffffffffffffffffff8
+
+COUNT = 125
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab5
+V = fffffffffffffffffffffffffffffffc
+
+COUNT = 126
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab6
+V = fffffffffffffffffffffffffffffffe
+
+COUNT = 127
+Key = 15b9c3b3eaa20ff9d7dd9ae6adc6e24b065d70ddd9920e92
+DT = 7b775e8722ff8fd8c49496afbb7faab7
+V = ffffffffffffffffffffffffffffffff
+

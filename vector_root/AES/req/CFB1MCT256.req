@@ -1,0 +1,19 @@
+# CAVS 14.2
+# AESVS MCT test data for CFB1
+# State : Encrypt and Decrypt
+# Key Length : 256
+# Generated on Fri Mar 15 13:16:04 2013
+
+[ENCRYPT]
+
+COUNT = 0
+KEY = 09dfabcb8fc9bb773deb0e8ff9e4d84fa75a3a1d9c9a5c56567ebc4d6a94c691
+IV = 9b78f8a0dd78e26a2bc789f2554465a9
+PLAINTEXT = 0
+
+[DECRYPT]
+
+COUNT = 0
+KEY = a6874deda27326cb0b6dd5260796493da93fdd11baa138bfb9ce710c20e87742
+IV = d10458c1cc85be1a6033bc4998756e07
+CIPHERTEXT = 1

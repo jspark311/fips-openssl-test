@@ -1,0 +1,9 @@
+#  CAVS 14.2
+#  "SHA-256 Monte" 
+#  SHA-256 tests are configured for BYTE oriented implementations
+#  Generated on Tue Jan 22 12:19:46 2013
+
+[L = 32]
+
+Seed = f854505ea3383928f6686e796effee6a91f81ae2779f5eae894513d38938a422
+
