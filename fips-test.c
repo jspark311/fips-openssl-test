@@ -110,6 +110,7 @@ typedef struct {
 	BIGNUM*			qy;
 	BIGNUM*			r;
 	BIGNUM*			s;
+	BIGNUM*			d;
 	unsigned char*	result;
 	unsigned long	result_code;
 	char*			curve;
@@ -248,7 +249,7 @@ void printHelp(void);
 
 
 char* enabled_tests[]	= {"AES", "RNG", "HMAC", "ECDSA", "SHA"};	// Which tests will we support?
-char* test_root	= "./vector_root";					// Where are the tests located?
+char* test_root	= "./vector-root";					// Where are the tests located?
 
 struct Test *root_node	= NULL;				// The root of the linked-list that holds the Tests.
 
@@ -429,7 +430,7 @@ char* printBitFieldToBuffer(unsigned char *str, int len, char *buffer) {
 		int i = 0;
 		if ((str != NULL) && (len > 0)) {
 			for (i = 0; i < len; i++) {
-				if (*(str + (i/8)) & (0x80 >> i)) sprintf((buffer+i), "1");
+				if (*(str + (i/8)) & (0x80 >> (i%8))) sprintf((buffer+i), "1");
 				else sprintf((buffer+i), "0");
 			}
 		}
@@ -839,6 +840,7 @@ ECDSAVector* INIT_VECTOR_ECDSA(char* curve){
 	active_vect->s			= NULL;
 	active_vect->qx			= NULL;
 	active_vect->qy			= NULL;
+	active_vect->d			= NULL;
 	active_vect->msg_len		= 0;
 	active_vect->msg			= NULL;
 	active_vect->curve		= strdup(curve);
@@ -869,7 +871,9 @@ void freeECDSAVector(struct Vector *vector){
 	if (vect->s != NULL)		BN_free(vect->s);
 	if (vect->qx != NULL)		BN_free(vect->qx);
 	if (vect->qy != NULL)		BN_free(vect->qy);
+	if (vect->d != NULL)		BN_free(vect->d);
 	
+	vect->d		= NULL;
 	vect->result	= NULL;
 	vect->curve	= NULL;
 	vect->msg	= NULL;
@@ -990,7 +994,13 @@ void dumpECDSAVector(struct Vector *vector, FILE *fp) {
 		fprintf(fp, "\n");
 	}
 
-	if (t_vect->n > -1) fprintf(fp, "d = %d\n", t_vect->n);
+	//if (t_vect->n > -1) fprintf(fp, "d = %d\n", t_vect->n);
+
+	if (t_vect->d != NULL) {
+		fprintf(fp, "d = ");
+		do_bn_print_to_file(fp, t_vect->d);
+		fprintf(fp, "\n");
+	}
 
 	if (t_vect->qx != NULL) {
 		fprintf(fp, "Qx = ");
@@ -1044,6 +1054,12 @@ void printECDSAVector(struct Vector *vector) {
 	if (t_vect->msg_len > 0) {
 		printf("Msg:\t\t");
 		printBinString(t_vect->msg, t_vect->msg_len);
+		printf("\n");
+	}
+
+	if (t_vect->d != NULL) {
+		printf("d:\t\t");
+		do_bn_print(t_vect->d);
 		printf("\n");
 	}
 
@@ -1450,6 +1466,7 @@ int ec_get_pubkey(EC_KEY *key, BIGNUM *x, BIGNUM *y) {
 
 /**
 *	KeyPair test will generate new vectors. There are no known-answers for this test.
+*	Generates a private key (d) and the corresponding public key (Q).
 */
 int PROC_ECDSA_KEYPAIR(struct Vector *vector) {
 	int return_value	= -1;
@@ -1458,6 +1475,7 @@ int PROC_ECDSA_KEYPAIR(struct Vector *vector) {
 	if ((t_vect->qx == NULL) && (t_vect->qy == NULL)) {
 		BIGNUM *Qx		= NULL;
 		BIGNUM *Qy		= NULL;
+		BIGNUM *d		= NULL;
 		EC_KEY *key		= NULL;
 		ECDSAVector *nu_vect	= NULL;
 		struct Vector *nu_vector		= NULL;
@@ -1472,11 +1490,13 @@ int PROC_ECDSA_KEYPAIR(struct Vector *vector) {
 	
 			key = (EC_KEY *)(intptr_t) FIPS_ec_key_new_by_curve_name(curve_id);
 			if (FIPS_ec_key_generate_key(key)) {
+				d = BN_dup((BIGNUM *)(intptr_t)FIPS_ec_key_get0_private_key(key));
 				if (ec_get_pubkey(key, Qx, Qy)) {                          
 					if (i != 1) {		// If this is not our initial vector...
 						nu_vect				= INIT_VECTOR_ECDSA(t_vect->curve);			// Create the new ECDSA Vector...
 						nu_vect->curve_id	= curve_id;									// Which curve?
 						nu_vect->result_code	= 0;
+						nu_vect->d	= d;
 						nu_vect->qx	= Qx;
 						nu_vect->qy	= Qy;
 						nu_vect->n	= i;
@@ -1491,6 +1511,7 @@ int PROC_ECDSA_KEYPAIR(struct Vector *vector) {
 					}
 					else {
 						t_vect->result_code	= 0;
+						t_vect->d	= d;
 						t_vect->qx	= Qx;
 						t_vect->qy	= Qy;
 						t_vect->n	= i;
@@ -1509,6 +1530,39 @@ int PROC_ECDSA_KEYPAIR(struct Vector *vector) {
 	}
 	return return_value;
 }
+
+
+/**
+*	Given a private key, will generate and print the public key.
+*/
+void FIXED_PRIV_KEY_GEN_PUBLIC(const char *priv_key_str) {
+	int curve_id	= NID_sect409r1;
+
+	BIGNUM *Qx		= BN_new();
+	BIGNUM *Qy		= BN_new();
+	BIGNUM *d		= NULL;
+	EC_KEY *key		= (EC_KEY *)(intptr_t) FIPS_ec_key_new_by_curve_name(curve_id);
+	
+	if (!BN_hex2bn(&d, priv_key_str)) {
+		printf("Failed to parse private key from string.\n");
+	}
+	else if (FIPS_ec_key_generate_key(key)) {
+		if (FIPS_ec_key_set_private_key(key, d)) {
+			if (ec_get_pubkey(key, Qx, Qy)) {
+				printf("\tQx:\t");
+				do_bn_print(Qx);
+				printf("\n\tQy:\t");
+				do_bn_print(Qy);
+				printf("\n");
+			}
+			else printf("Failed to obtain public key.\n");
+		}
+		else printf("Failed to set private key.\n");
+		FIPS_ec_key_free(key);
+	}
+	else printf("Failed to generate key object.\n");
+}
+
 
 
 /****************************************************************************************************
@@ -1607,7 +1661,7 @@ void dumpRNGVector(struct Vector *vector, FILE *fp) {
 	fprintf(fp, "COUNT = %d\n", t_vect->count);
 
 	if (t_vect->key_len > 0) {
-		fprintf(fp, "KEY = ");
+		fprintf(fp, "Key = ");
 		printBinStringToFile(t_vect->key, t_vect->key_len, fp);
 		fprintf(fp, "\n");
 	}
@@ -2210,7 +2264,7 @@ void dumpAESVector(struct Vector *vector, FILE *fp) {
 		fprintf(fp, "\n");
 	}
 
-	if (!t_vect->oper) {
+	if (t_vect->oper) {
 		if (t_vect->plaintext_len > 0) {
 			fprintf(fp, "PLAINTEXT = ");
 			if (t_vect->block_mode == AES_CFB1_BLOCK) printBinStringAsBinToFile(t_vect->plaintext, t_vect->plaintext_len, fp);
@@ -2251,30 +2305,30 @@ void dumpAESVector(struct Vector *vector, FILE *fp) {
 void printAESVector(struct Vector *vector) {
 	AESVector *t_vect	= (AESVector*) vector->content;
 
-	printf("TEST:\t\t\t\t%s\n", vector->name);
+	printf("TEST:\t\t%s\n", vector->name);
 	printStatusLine(vector->execd);
 
 	if (vector->err != NULL) printf("ERROR:\t\t\t\t%s", vector->err);
 
-	printf("COUNT:\t\t\t\t%d\n", t_vect->count);
+	printf("COUNT:\t\t%d\n", t_vect->count);
 
-	if (t_vect->oper) printf("OPERATION:\t\tENCRYPT\n");
-	else  printf("OPERATION:\t\tDECRYPT\n");
+	if (t_vect->oper) printf("OPERATION:\tENCRYPT\n");
+	else  printf("OPERATION:\tDECRYPT\n");
 
 	if (t_vect->key_len > 0) {
-		printf("KEY:\t\t\t\t");
+		printf("KEY:\t\t");
 		printBinString(t_vect->key, t_vect->key_len);
 		printf("\n");
 	}
 
 	if (t_vect->iv_len > 0) {
-		printf("IV:\t\t\t\t");
+		printf("IV:\t\t");
 		printBinString(t_vect->iv, t_vect->iv_len);
 		printf("\n");
 	}
 
 	if (t_vect->plaintext_len > 0) {
-		printf("PLAINTEXT:\t\t");
+		printf("PLAINTEXT:\t");
 		if (t_vect->block_mode == AES_CFB1_BLOCK) {
 			printf("(%d)  ", t_vect->plaintext_len);
 			printBinStringAsBin(t_vect->plaintext, t_vect->plaintext_len);
@@ -3318,10 +3372,10 @@ int buildTestVectors(char *test) {
 								write_flag	= stackStrOntoList(write_flag, trim(line));
 								enc_dec = 1;
 							}
-							else if (strcmp(trim(line), "[DECRYPT]") == 0) {
+							else if (strcmp(trim(line), "[DECRYPT]") == 0) {	// All tests that follow are DECRYPT tests.
 								write_flag	= stackStrOntoList(write_flag, trim(line));
 								enc_dec = 0;	
-							}	// All tests that follow are DECRYPT tests.
+							}
 							else {
 								// If we are in this block, we don't have to special-case the line.
 								// Make sure that we have a vector allocated.
@@ -3710,7 +3764,7 @@ void printBinStringAsBinToFile(unsigned char *str, int len, FILE *fp) {
 	int i = 0;
 	if ((str != NULL) && (len > 0)) {
 		for (i = 0; i < len; i++) {
-			if (*(str + (i/8)) & (0x80 >> i)) fprintf(fp, "1");
+			if (*(str + (i/8)) & (0x80 >> (i%8))) fprintf(fp, "1");
 			else fprintf(fp, "0");
 		}
 	}
@@ -3724,7 +3778,7 @@ void printBinStringAsBin(unsigned char *str, int len) {
 	int i = 0;
 	if ((str != NULL) && (len > 0)) {
 		for (i = 0; i < len; i++) {
-			if (*(str + (i/8)) & (0x80 >> i)) printf("1");
+			if (*(str + (i/8)) & (0x80 >> (i%8))) printf("1");
 			else printf("0");
 		}
 	}
@@ -3895,6 +3949,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	OpenSSL_add_all_algorithms();
+	
 	printf("There are %d test-blocks enabled...   ", (int)(sizeof(enabled_tests)/sizeof(enabled_tests[0])));
 	int i;
 	for (i = (int)(sizeof(enabled_tests)/sizeof(enabled_tests[0]))-1; i >= 0; i--) printf("%s ", enabled_tests[i]);
